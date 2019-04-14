@@ -1,5 +1,6 @@
 <?php
     // actualizacion de conexión
+    //si se logro hacer la actualizacion
     //$host="127.0.0.1";
     $host="localhost";
     $port="5432";
