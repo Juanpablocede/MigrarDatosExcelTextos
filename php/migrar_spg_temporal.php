@@ -88,14 +88,14 @@
 		}
 		if ($existe==1)
 		{
-			$sql="UPDATE spg_temporal SET denestpro1='".$campo03."', denestpro2='".$campo05."' , denestpro3='".$campo07."',".
-			 		 "denestpro4='".$campo09."', denestpro5='".$campo11."', spg_cuenta='".$campo13."', denominacion='".$campo14."',".
-					 "status='".$campo15."',sc_cuenta='".$campo16."', asignado=$campo17, precomprometido=$campo18, comprometido=$campo19,".
-					 "causado=$campo20,pagado=$campo21, aumento=$campo22, distribuir=$campo23, disminucion=$campo24, enero=$campo25, " .
-			 	 	 "febrero=$campo26, marzo=$campo27, abril=$campo28, mayo=$campo29, junio=$campo30,julio=$campo31, agosto=$campo32,".
-					 "septiembre=$campo33, octubre=$campo34, noviembre=$campo35, diciembre=$campo36,nivel=$campo37, referencia='".$campo38."',".
+			$sql="UPDATE spg_temporal SET denestpro1='".$campo03."', denestpro2='".$campo05."' , denestpro3='".$campo07."'," .
+			 		 "denestpro4='".$campo09."', denestpro5='".$campo11."', spg_cuenta='".$campo13."', denominacion='".$campo14."'," .
+					 "status='".$campo15."',sc_cuenta='".$campo16."', asignado=$campo17, precomprometido=$campo18, comprometido=$campo19," .
+					 "causado=$campo20, pagado=$campo21, aumento=$campo22, distribuir=$campo23, disminucion=$campo24, enero=$campo25, " .
+			 	 	 "febrero=$campo26, marzo=$campo27, abril=$campo28, mayo=$campo29, junio=$campo30,julio=$campo31, agosto=$campo32," .
+					 "septiembre=$campo33, octubre=$campo34, noviembre=$campo35, diciembre=$campo36,nivel=$campo37, referencia='".$campo38."'," .
 					 "scgctaint='".$campo39."', sc_cuenta_art='".$campo34."' ".
-			 	 	 "WHERE codemp='".$campo01."' AND codestpro1='".$campo02."' AND codestpro2='".$campo04."' AND codestpro3='".$campo06."' AND ".
+			 	 	 "WHERE codemp='".$campo01."' AND codestpro1='".$campo02."' AND codestpro2='".$campo04."' AND codestpro3='".$campo06."' AND " .
  			 		 "codestpro4='".$campo08."' AND codestpro5='".$campo10."' AND estcla='".$campo12."'";
 			$result = pg_query($conexion,$sql);
 			echo 'Modificando Estructura: '.$campo01.'-'.$campo02.'-'.$campo04.'-'.$campo06.'-'.$campo08.'-'.$campo10."<br />";
