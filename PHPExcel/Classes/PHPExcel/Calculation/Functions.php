@@ -571,7 +571,6 @@ class PHPExcel_Calculation_Functions {
 			return 1;
 		}
 		$value	= self::flattenSingleValue($value);
-
 		if (($value === NULL) || (is_float($value)) || (is_int($value))) {
 				return 1;
 		} elseif(is_bool($value)) {
