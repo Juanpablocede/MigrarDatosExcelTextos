@@ -3,7 +3,7 @@
     $conexion = $conn;
     $registros_ingresados=0;
     $registros_modificados=0;
-
+    //cuando el archivo texto es delimitado por coma (,)
     $filas=file("c:\Users\juanpa\aaa_personal.txt");
     foreach($filas as $value)
     {
